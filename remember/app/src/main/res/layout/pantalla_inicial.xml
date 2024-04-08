@@ -5,46 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".MainActivity">
+    tools:context=".PantallaInicial">
 
     <ImageView
-        android:id="@+id/fondo_blanco"
-        android:layout_width="430dp"
-        android:layout_height="774dp"
-        android:layout_marginTop="84dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        android:id="@+id/elipse2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/elipse2" />
-
-    <Button
-        android:id="@+id/crear_cuenta"
-        android:layout_width="208dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/boton_rectangular"
-        android:text="Crear cuenta"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_palabra" />
-
-    <TextView
-        android:id="@+id/pregunta_inicio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿Ya tienes una cuenta? Inicia sesión"
-        android:textColor="@color/gris_claro"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/crear_cuenta"
-        app:layout_constraintVertical_bias="0.083" />
 
     <ImageView
         android:id="@+id/logo_cerebro"
@@ -60,10 +30,43 @@
         android:id="@+id/logo_palabra"
         android:layout_width="357dp"
         android:layout_height="88dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_cerebro"
         app:srcCompat="@drawable/remember_nombre" />
+
+    <Button
+        android:id="@+id/boton_doctor"
+        android:layout_width="208dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boton_rectangular"
+        android:gravity="center"
+        android:text="Doctor/a"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_palabra" />
+
+    <Button
+        android:id="@+id/boton_paciente"
+        android:layout_width="208dp"
+        android:layout_height="57dp"
+        android:background="@drawable/boton_rectangular"
+        android:gravity="center"
+        android:text="Paciente"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_doctor"
+        app:layout_constraintVertical_bias="0.229" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
