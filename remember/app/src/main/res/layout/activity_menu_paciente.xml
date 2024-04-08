@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".Menu_paciente">
+
+
+    <ImageView
+        android:id="@+id/ajustes"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:src="@drawable/felipon" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/foto_usuario"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/felipon" />
+
+        <TextView
+            android:id="@+id/nombre_ususario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="¡Hola Felipe!"
+            android:textSize="30sp"
+            android:textColor="@color/morado_oscuro" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_titulo_juegos_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:text="JUEGOS"
+        android:textSize="30sp"
+        android:textColor="@color/morado_oscuro" />
+
+    <LinearLayout
+        android:id="@+id/but_memory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:id="@+id/logo_Memory"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icono_imagen_correcta" />
+        <TextView
+            android:id="@+id/texto_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Memory"
+            android:textSize="24sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:id="@+id/logo_sopa_letras"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icono_imagen_correcta" />
+        <TextView
+            android:id="@+id/texto_sopa_letras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Sopa de letras"
+            android:textSize="24sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:id="@+id/logo_imagen_correcta"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icono_imagen_correcta" />
+        <TextView
+            android:id="@+id/texto_imagen_correcta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Imagen correcta"
+            android:textSize="24sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:id="@+id/logo_simon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icono_imagen_correcta" />
+        <TextView
+            android:id="@+id/texto_simon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Simon"
+            android:textSize="24sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:id="@+id/logo_preguntados"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icono_imagen_correcta" />
+        <TextView
+            android:id="@+id/texto_preguntados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Preguntados"
+            android:textSize="24sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/logo_puzzle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icono_imagen_correcta" />
+        <TextView
+            android:id="@+id/texto_puzzle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Puzzle"
+            android:textSize="24sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+</LinearLayout>

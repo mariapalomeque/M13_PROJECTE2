@@ -5,9 +5,8 @@
     </style>
 
 
-
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Customize your light theme here. -->
+    <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
 
     <style name="Theme.Remember" parent="Base.Theme.Remember" />

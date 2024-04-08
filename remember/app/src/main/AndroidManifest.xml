@@ -13,6 +13,16 @@
         android:theme="@style/Theme.Remember"
         tools:targetApi="31">
         <activity
+            android:name=".info_memory"
+            android:exported="false" />
+        <activity
+            android:name=".Info_memory"
+            android:exported="false"
+            android:theme="@style/Theme.Remember" />
+        <activity
+            android:name=".Menu_paciente"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
