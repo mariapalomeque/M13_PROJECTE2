@@ -28,6 +28,18 @@
         <activity android:name=".IniciarSesion"
             android:exported="true"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".ConfirmacionVerificacion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".RegistroDoctor"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".RegistroPaciente"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ConfirmacionValidacion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
