@@ -10,40 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4e313a4-57bf-4492-a18d-f4243be16a9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/M13_PROJECTE2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-land/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-v23/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-w1240dp/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-w600dp/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/M13_PROJECTE2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v23/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-w1240dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-w600dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/remember/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/ConfirmacionValidacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/ConfirmacionValidacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/ConfirmacionVerificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/ConfirmacionVerificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/FirstFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/FirstFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/Menu_paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/Menu_paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/SecondFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/SecondFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/info_memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/java/com/example/remember/info_memory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/drawable/cerebro_festejando.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/drawable/cerebro_festejando.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/drawable/cerebro_meditacion.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/drawable/cerebro_meditacion.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/drawable/felipon.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/drawable/felipon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/drawable/icono_imagen_correcta.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/drawable/icono_imagen_correcta.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/drawable/interrogante.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/drawable/interrogante.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/drawable/rounded_corners.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/drawable/rounded_corners.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/layout/activity_info_memory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/layout/activity_info_memory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/layout/activity_menu_paciente.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/layout/activity_menu_paciente.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/layout/confirmacion_validacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/layout/confirmacion_validacion.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/layout/confirmacion_verificacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/layout/confirmacion_verificacion.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/layout/fragment_first.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/layout/fragment_first.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/layout/fragment_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/layout/fragment_second.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/layout/pantalla_inicial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/layout/pantalla_inicial.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remember/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/app/src/main/res/values/strings.xml" afterDir="false" />
@@ -83,17 +73,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "android.gradle.sync.needed": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/talia/M13_PROJECTE2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/talia/M13_PROJECTE2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.remember" />
