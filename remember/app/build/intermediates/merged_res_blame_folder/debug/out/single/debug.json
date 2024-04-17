@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "com.example.remember.app-merged_res-28:/xml_backup_rules.xml.flat",
+        "source": "com.example.remember.app-main-30:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/layout_iniciar_sesion.xml.flat",
+        "source": "com.example.remember.app-main-30:/layout/iniciar_sesion.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_cerebro_inicio_sesion.png.flat",
+        "source": "com.example.remember.app-main-30:/drawable/cerebro_inicio_sesion.png"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.remember.app-main-30:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_elipse2.png.flat",
+        "source": "com.example.remember.app-main-30:/drawable/elipse2.png"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_logo.png.flat",
+        "source": "com.example.remember.app-main-30:/drawable/logo.png"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_boton_rectangular.xml.flat",
+        "source": "com.example.remember.app-main-30:/drawable/boton_rectangular.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.remember.app-main-30:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/layout_crear_cuenta.xml.flat",
+        "source": "com.example.remember.app-main-30:/layout/crear_cuenta.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_remember_nombre.png.flat",
+        "source": "com.example.remember.app-main-30:/drawable/remember_nombre.png"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/layout_registro_doctor.xml.flat",
+        "source": "com.example.remember.app-main-30:/layout/registro_doctor.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_ellipseblanca.png.flat",
+        "source": "com.example.remember.app-main-30:/drawable/ellipseblanca.png"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/layout_pantalla_inicial.xml.flat",
+        "source": "com.example.remember.app-main-30:/layout/pantalla_inicial.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_boton_rectangular_lila.xml.flat",
+        "source": "com.example.remember.app-main-30:/drawable/boton_rectangular_lila.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_texto_borde.xml.flat",
+        "source": "com.example.remember.app-main-30:/drawable/texto_borde.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/drawable_cerebrofeliz.png.flat",
+        "source": "com.example.remember.app-main-30:/drawable/cerebrofeliz.png"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.remember.app-main-30:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/layout_registro_paciente.xml.flat",
+        "source": "com.example.remember.app-main-30:/layout/registro_paciente.xml"
+    },
+    {
+        "merged": "com.example.remember.app-merged_res-28:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.remember.app-main-30:/mipmap-hdpi/ic_launcher_round.webp"
+    }
+]
