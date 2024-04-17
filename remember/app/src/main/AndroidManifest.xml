@@ -12,27 +12,20 @@
         android:theme="@style/Theme.Remember"
         tools:targetApi="31">
 
-
         <activity
-            android:name=".Info_memory"
-            android:exported="false"
-            android:theme="@style/Theme.Remember" />
-        <activity
-            android:name=".Menu_paciente"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
             android:name=".PantallaInicial"
-            android:exported="true"
-            android:theme="@style/AppTheme"> <!-- Cambio realizado aquí -->
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".info_memory"
+            android:exported="true" />
+        <activity
+            android:name=".Menu_paciente"
+            android:exported="false" />
         <activity android:name=".CrearCuenta"
             android:exported="true"
             android:theme="@style/AppTheme"/>
@@ -49,6 +42,12 @@
             android:exported="true"
             android:theme="@style/AppTheme"/>
         <activity android:name=".ConfirmacionValidacion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".FirstFragment"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".SecondFragment"
             android:exported="true"
             android:theme="@style/AppTheme"/>
     </application>
