@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42eba0f6-634e-4f25-a3bf-34d2a9c9f1c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/M13_PROJECTE2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remember/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remember/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remember/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remember/app/src/main/res/values-land/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remember/app/src/main/res/values-v23/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remember/app/src/main/res/values-w1240dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remember/app/src/main/res/values-w600dp/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/ConfirmacionValidacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/ConfirmacionValidacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/ConfirmacionVerificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/ConfirmacionVerificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/FirstFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/FirstFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/Menu_paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/Menu_paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/SecondFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/SecondFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/info_memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/java/com/example/remember/info_memory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/cerebro_festejando.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/cerebro_festejando.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/cerebro_meditacion.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/cerebro_meditacion.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/felipon.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/felipon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/icono_imagen_correcta.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/icono_imagen_correcta.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/interrogante.png" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/interrogante.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/rounded_corners.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/drawable/rounded_corners.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/activity_info_memory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/activity_info_memory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/activity_menu_paciente.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/activity_menu_paciente.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/confirmacion_validacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/confirmacion_validacion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/confirmacion_verificacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/confirmacion_verificacion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/fragment_first.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/fragment_first.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/fragment_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/fragment_second.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/pantalla_inicial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/layout/pantalla_inicial.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remember/remember/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/remember/remember/app/src/main/res/values/themes.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ealXa9EAjzSglWOZNqbnejuEG1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/talia/M13_PROJECTE2/remember/remember"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42eba0f6-634e-4f25-a3bf-34d2a9c9f1c1" name="Changes" comment="" />
+      <created>1712150612829</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712150612829</updated>
+    </task>
+    <servers />
+  </component>
+</project>

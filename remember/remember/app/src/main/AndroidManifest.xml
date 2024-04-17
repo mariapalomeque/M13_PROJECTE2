@@ -14,18 +14,40 @@
 
         <activity
             android:name=".PantallaInicial"
-            android:exported="true"
-            android:theme="@style/AppTheme"> <!-- Cambio realizado aquí -->
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".info_memory"
+            android:exported="true" />
+        <activity
+            android:name=".Menu_paciente"
+            android:exported="false" />
         <activity android:name=".CrearCuenta"
             android:exported="true"
             android:theme="@style/AppTheme"/>
         <activity android:name=".IniciarSesion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ConfirmacionVerificacion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".RegistroDoctor"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".RegistroPaciente"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ConfirmacionValidacion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".FirstFragment"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".SecondFragment"
             android:exported="true"
             android:theme="@style/AppTheme"/>
     </application>
