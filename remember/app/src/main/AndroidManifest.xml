@@ -28,6 +28,27 @@
         <activity android:name=".IniciarSesion"
             android:exported="true"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".RegistroDoctor"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".RegistroPaciente"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ConfirmarVerificacion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ConfirmarValidacion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".AdaptadorPaciente"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ObjetoPaciente"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Pacientes"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
