@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".info_pregunta">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_info_memory"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="96dp"
+            android:background="@drawable/boton_rectangular_lila"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Continuar"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

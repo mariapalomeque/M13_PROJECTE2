@@ -7,21 +7,22 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class IniciarSesion extends AppCompatActivity {
+public class info_pregunta extends AppCompatActivity {
+
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.iniciar_sesion);
+        setContentView(R.layout.activity_info_pregunta);
 
-        Button btiniciarsession = findViewById(R.id.btn_iniciar_sesion);
-
-        btiniciarsession.setOnClickListener(new View.OnClickListener(){
+        Button btinfo_pregunta = findViewById(R.id.btn_info_memory);
+        btinfo_pregunta.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(IniciarSesion.this, Menu_paciente.class);
+                Intent intent = new Intent(info_pregunta.this, Preguntas.class);
                 startActivity(intent);
             }
         });
+
 
     }
 }

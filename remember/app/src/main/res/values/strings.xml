@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">remember</string>
+    <string name="expli1">Al comenzar, todas las\n cartas se muestran\n<font color="#4A457B"> boca abajo.</font></string>
+
 </resources>
