@@ -49,6 +49,9 @@
         <activity android:name=".Memory_large"
             android:exported="true"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".Simon"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
 
 
     </application>

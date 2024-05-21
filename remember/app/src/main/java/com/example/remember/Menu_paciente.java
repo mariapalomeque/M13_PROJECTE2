@@ -19,6 +19,10 @@ public class Menu_paciente extends AppCompatActivity {
 
         LinearLayout but_memory = findViewById(R.id.but_memory);
         LinearLayout but_preguntados = findViewById(R.id.but_preguntados);
+        LinearLayout but_simon = findViewById(R.id.but_simon);
+        LinearLayout but_imagencorrecta = findViewById(R.id.imagencorrecta);
+
+
 
         but_memory.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,5 +40,20 @@ public class Menu_paciente extends AppCompatActivity {
             }
         });
 
+        but_simon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Menu_paciente.this, Simon.class);
+                startActivity(i);
+            }
+        });
+
+        but_imagencorrecta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Menu_paciente.this, ImagenCorrecta.class);
+                startActivity(i);
+            }
+        });
     }
 }
