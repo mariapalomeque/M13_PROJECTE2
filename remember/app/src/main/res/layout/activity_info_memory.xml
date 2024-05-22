@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="584dp"
+        android:layout_height="640dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/elipse2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEMORY"
+        android:textColor="@color/titulo"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/btn_info_memory"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/boton_rectangular_lila"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Continuar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="165dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/memory_instrucciones1" />
+
+    <TextView
+        android:id="@+id/inst1"
+        android:layout_width="266dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="72dp"
+        android:gravity="right"
+        android:text="@string/memory1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inst2"
+        android:layout_width="249dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="260dp"
+        android:gravity="left"
+        android:text="@string/memory2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="126dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/memory_instrucciones2" />
+
+    <TextView
+        android:id="@+id/inst3"
+        android:layout_width="271dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="328dp"
+        android:gravity="center"
+        android:text="@string/memory3"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="104dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/memory_instrucciones3" />
+
+    <TextView
+        android:id="@+id/inst4"
+        android:layout_width="376dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="440dp"
+        android:gravity="center"
+        android:text="@string/memory4"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="95dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/memory_instrucciones4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
