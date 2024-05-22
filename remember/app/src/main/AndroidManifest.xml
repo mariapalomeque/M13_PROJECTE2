@@ -49,6 +49,30 @@
         <activity android:name=".Pacientes"
             android:exported="true"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".inicio_paciente"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".iniciar_sesion_paciente"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".presentacion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".presentacion2"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".presentacion3"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".presentacion4"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".presentacion5"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Configuracion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

@@ -8,4 +8,16 @@
     <string name="bienvenida3">Si alguna vez <font color="#4A457B"> olvidas</font> cómo jugar a uno de nuestros  <font color="#4A457B"> juegos </font>, estoy aquí para <font color="#4A457B"> ayudarte</font>.  </string>
     <string name="bienvenida4">Presionado el <font color="#4A457B"> interrogante</font>, podras consultar las<font color="#4A457B"> intrucciones </font> en cualquier momento.</string>
     <string name="bienvenida5">Terminadas las explicaciones , <font color="#4A457B">¡vamos a jugar !</font></string>
+    <string name="memory1">Al comenzar, todas  las cartas se muestran<font color="#4A457B"> boca abajo</font>.</string>
+    <string name="memory2"><font color="#4A457B">Toca </font> una carta para revelar su<font color="#4A457B"> imagen</font>.</string>
+    <string name="memory3">Una vez encuentres una<font color="#4A457B"> pareja</font> esta aparecera difuminda.</string>
+    <string name="memory4"><font color="#4A457B">Recuerda </font> la<font color="#4A457B"> ubicación</font> de las cartas que has revelado y<font color="#4A457B"> halla todas</font> las<font color="#4A457B"> parejas</font>.</string>
+    <string name="pregunt1">Verás una<font color="#4A457B"> pregunta</font> en la pantalla, formulada especialmente<font color="#4A457B"> para ti</font>.</string>
+    <string name="pregunt2">Puede ser sobre tus<font color="#4A457B"> pasatiempos</font> favoritos,<font color="#4A457B"> recuerdos</font>de la<font color="#4A457B"> infancia</font>, o cualquier otro <font color="#4A457B"> tema personal</font>relevante.</string>
+    <string name="pregunt3">Debajo de la pregunta apareceran <font color="#4A457B"> tres posibles respuestas</font>.</string>
+    <string name="pregunt4"><font color="#4A457B">Selecciona la respuesta correcta</font>.</string>
+    <string name="simon1">Cuando comiences, verás <font color="#4A457B"> cuatro</font> botones de<font color="#4A457B"> colores</font> en la pantalla.</string>
+    <string name="simon2">Los botones se <font color="#4A457B"> ilumnaran</font> revelando una<font color="#4A457B"> secuencia</font> de colores,<font color="#4A457B"> recuerdala</font>.</string>
+    <string name="simon3">Cuando termine, deberas tocar los<font color="#4A457B"> botones</font> en el <font color="#4A457B"> mismo orden</font>. </string>
+    <string name="simon4"><font color="#4A457B">Recuerda la secuencia más larga posible.</font>.</string>
 </resources>
