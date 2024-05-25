@@ -19,7 +19,7 @@
 
     <ImageView
         android:id="@+id/foto_doctor"
-        android:layout_width="140dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="48dp"
