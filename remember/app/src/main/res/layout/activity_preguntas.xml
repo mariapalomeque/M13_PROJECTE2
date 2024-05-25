@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Preguntas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/elipse2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_titulo_juegos_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:text="PREGUNTAS"
+                android:textSize="35sp"
+                android:textColor="@color/titulo"/>
+            <ImageView
+                android:id="@+id/ayuda"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/interrogante" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/image_question"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cerebro_inicio_sesion" />
+
+        <TextView
+        android:id="@+id/text_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:gravity="center"
+        android:textSize="22dp"
+            android:textStyle="bold"
+        android:text="¿Cual és el nombre de tu nieto?"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/button_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pedro"
+        android:background="@color/background"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/button_answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Juan"
+        android:background="@color/background"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/button_answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roberto"
+        android:background="@color/background"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/button_answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Felipe"
+        android:background="@color/background"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/contador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="0/5"
+
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="Salir"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@drawable/boton_rectangular_lila"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

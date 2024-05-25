@@ -73,6 +73,33 @@
         <activity android:name=".Configuracion"
             android:exported="true"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".Menu_paciente"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".info_memory"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Memory"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".info_pregunta"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Preguntas"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".memory_mid"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Memory_large"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Simon"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ImagenCorrecta"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
