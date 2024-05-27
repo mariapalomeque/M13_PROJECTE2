@@ -117,11 +117,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b009605-b6c7-44e8-afc4-3471a3bdd092" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/instruccionesSimon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/instrucciones_simon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/actiity_info_simon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/actiity_info_simon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_paciente.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_paciente.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +178,7 @@
       <list>
         <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -219,8 +218,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\anoni\Desktop\M13_PROJECTE2\remember\app\src\main\res\layout" />
       <recent name="C:\Users\anoni\Desktop\M13_PROJECTE2\remember\app\src\main\res\drawable" />
+      <recent name="C:\Users\anoni\Desktop\M13_PROJECTE2\remember\app\src\main\res\layout" />
     </key>
   </component>
   <component name="RunManager">
