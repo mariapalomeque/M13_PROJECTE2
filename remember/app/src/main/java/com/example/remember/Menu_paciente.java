@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,8 +22,15 @@ public class Menu_paciente extends AppCompatActivity {
         LinearLayout but_preguntados = findViewById(R.id.but_preguntados);
         LinearLayout but_simon = findViewById(R.id.but_simon);
         LinearLayout but_imagencorrecta = findViewById(R.id.imagencorrecta);
+        ImageView config=findViewById(R.id.config);
 
-
+        config.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu_paciente.this, Configuracion.class);
+                startActivity(intent);
+            }
+        });
 
         but_memory.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,7 +11,7 @@
 
 
     <ImageView
-        android:id="@+id/ajustes"
+        android:id="@+id/config"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="end"

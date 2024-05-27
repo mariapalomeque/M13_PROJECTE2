@@ -44,9 +44,9 @@ public class Memory_large extends AppCompatActivity {
         startCountdown();
 
         List<Integer> images = new ArrayList<>();
-        images.add(R.drawable.perromemory);
-        images.add(R.drawable.tulipanes_memory);
-        images.add(R.drawable.platanomemory);
+        images.add(R.drawable.hamstermemory);
+        images.add(R.drawable.applememory);
+        images.add(R.drawable.relojmemory);
         images.add(R.drawable.montserrat_memory);
         images.add(R.drawable.ball);
         images.add(R.drawable.telephone);

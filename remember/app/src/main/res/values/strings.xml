@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">remember</string>
+
     <string name="expli1">Al comenzar, todas las\n cartas se muestran\n<font color="#4A457B"> boca abajo.</font></string>
+
+
+    <string name="texto_verificacion">Cuenta <font color="#4A457B"> pendiente
+    </font> de <font color="#4A457B"> verificar </font></string>
+    <string name="texto_validacion">¡Cuenta <font color="#4A457B"> validada</font>!</string>
+    <string name="bienvenida">Hola encantada de conocerte,\n soy<font color="#4A457B"> Remember.</font></string>
+    <string name="bienvenida2">Con una serie de <font color="#4A457B"> juegos</font> podemos trabajar juntos para mantener tu <font color="#4A457B"> memoria </font> y <font color="#4A457B"> agilidad mental</font>.  </string>
+    <string name="bienvenida3">Si alguna vez <font color="#4A457B"> olvidas</font> cómo jugar a uno de nuestros  <font color="#4A457B"> juegos </font>, estoy aquí para <font color="#4A457B"> ayudarte</font>.  </string>
+    <string name="bienvenida4">Presionado el <font color="#4A457B"> interrogante</font>, podras consultar las<font color="#4A457B"> intrucciones </font> en cualquier momento.</string>
+    <string name="bienvenida5">Terminadas las explicaciones , <font color="#4A457B">¡vamos a jugar !</font></string>
 
 </resources>
