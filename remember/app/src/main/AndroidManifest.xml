@@ -46,6 +46,9 @@
         <activity android:name=".Preguntas"
             android:exported="true"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".Resultados"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".memory_mid"
             android:exported="true"
             android:theme="@style/AppTheme"/>
@@ -59,7 +62,21 @@
             android:exported="true"
             android:theme="@style/AppTheme"/>
 
-
+        <activity android:name=".presentacion"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".presentacion2"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".presentacion3"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".presentacion4"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".presentacion5"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
 
         <activity android:name=".RegistroDoctor"
             android:exported="true"

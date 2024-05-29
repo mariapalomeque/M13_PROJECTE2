@@ -62,11 +62,18 @@ public class Preguntas extends AppCompatActivity {
                 startActivity(intent);
             } else {
                 preguntaActual++;
-                resetButtons();
-                setQuestionAndAnswers();
-                btnSalir.setText("Salir");
+                if (preguntaActual < listaPreguntas.size()) {
+                    resetButtons();
+                    setQuestionAndAnswers();
+                    btnSalir.setText("Salir");
+                } else {
+                    Intent intent = new Intent(Preguntas.this, Resultados.class);
+                    intent.putExtra("numAciertos", numAciertos);
+                    startActivity(intent);
+                }
             }
         });
+
     }
 
     @Override
@@ -112,12 +119,14 @@ public class Preguntas extends AppCompatActivity {
             return buttonAnswer4;
         }
     }
+    private int numAciertos = 0;
 
     private void onAnswerClick(View view) {
         Button clickedButton = (Button) view;
         if (clickedButton == correctButton) {
             clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
             Toast.makeText(this, "¡Respuesta correcta!", Toast.LENGTH_SHORT).show();
+            numAciertos++; // Incrementar contador de aciertos
         } else {
             clickedButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
             correctButton.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
@@ -126,6 +135,7 @@ public class Preguntas extends AppCompatActivity {
         disableButtons();
         btnSalir.setText("Continuar");
     }
+
 
     private void disableButtons() {
         buttonAnswer1.setEnabled(false);
@@ -139,11 +149,19 @@ public class Preguntas extends AppCompatActivity {
         buttonAnswer2.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
         buttonAnswer3.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
         buttonAnswer4.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
+
+        buttonAnswer1.setBackgroundColor(getResources().getColor(R.color.background));
+        buttonAnswer2.setBackgroundColor(getResources().getColor(R.color.background));
+        buttonAnswer3.setBackgroundColor(getResources().getColor(R.color.background));
+        buttonAnswer4.setBackgroundColor(getResources().getColor(R.color.background));
+
         buttonAnswer1.setEnabled(true);
         buttonAnswer2.setEnabled(true);
         buttonAnswer3.setEnabled(true);
         buttonAnswer4.setEnabled(true);
     }
+
+
 
     private void updateCounter() {
         textViewContador.setText(String.format("%d/5", preguntaActual + 1));
@@ -169,6 +187,7 @@ public class Preguntas extends AppCompatActivity {
         private final String pregunta;
         private final List<String> respuestas;
         private final String respuestaCorrecta;
+
 
         public Pregunta(String pregunta, String respuestaCorrecta, String... respuestasIncorrectas) {
             this.pregunta = pregunta;
@@ -222,4 +241,3 @@ public class Preguntas extends AppCompatActivity {
         }
     }
 }
-

@@ -18,7 +18,7 @@ public class IniciarSesion extends AppCompatActivity {
         btiniciarsession.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(IniciarSesion.this, Menu_paciente.class);
+                Intent intent = new Intent(IniciarSesion.this, presentacion.class);
                 startActivity(intent);
             }
         });
