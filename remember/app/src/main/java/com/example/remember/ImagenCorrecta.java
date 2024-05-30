@@ -18,11 +18,12 @@ import java.util.Random;
 
 public class ImagenCorrecta extends AppCompatActivity {
 
-    private TextView textViewPregunta, countdownTextView;
-    private ImageView imagen1, imagen2, imageResultado;
+    private TextView textViewPregunta, countdownTextView, rondasTextView;
+    private ImageView imagen1, imagen2;
     private Button buttonBack;
 
     private List<PreguntaYPareja> listaPreguntasYParejas;
+    private List<PreguntaYPareja> preguntasNoUsadas;
     private int rondaActual;
     private int correctas;
     private Random random;
@@ -32,6 +33,7 @@ public class ImagenCorrecta extends AppCompatActivity {
 
     private Handler cuentaRegresivaHandler;
     private Runnable cuentaRegresivaRunnable;
+    private boolean rondaTerminada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +42,16 @@ public class ImagenCorrecta extends AppCompatActivity {
 
         textViewPregunta = findViewById(R.id.textViewPregunta);
         countdownTextView = findViewById(R.id.countdownTextView);
+        rondasTextView = findViewById(R.id.rondas);
         imagen1 = findViewById(R.id.imagen1);
         imagen2 = findViewById(R.id.imagen2);
-        imageResultado = findViewById(R.id.imageResultado);  // Nueva vista para mostrar el resultado
         buttonBack = findViewById(R.id.button_back);
 
         listaPreguntasYParejas = new ArrayList<>();
         rondaActual = 1;
         correctas = 0;
         random = new Random();
+        rondaTerminada = false;
 
         listaPreguntasYParejas.add(new PreguntaYPareja("¿Cuál de estas casas es la tuya?", new int[]{R.drawable.casa1_ic, R.drawable.casa2_ic}));
         listaPreguntasYParejas.add(new PreguntaYPareja("¿Cuál de estos perros es el tuyo?", new int[]{R.drawable.dog1_ic, R.drawable.dog2_ic}));
@@ -59,8 +62,17 @@ public class ImagenCorrecta extends AppCompatActivity {
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ImagenCorrecta.this, Menu_paciente.class);
-                startActivity(intent);
+                if (rondaTerminada) {
+                    rondaActual++;
+                    if (rondaActual <= NUMERO_RONDAS) {
+                        mostrarRonda();
+                    } else {
+                        mostrarResultadoFinal();
+                    }
+                } else {
+                    Intent intent = new Intent(ImagenCorrecta.this, Menu_paciente.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -70,16 +82,22 @@ public class ImagenCorrecta extends AppCompatActivity {
     private void empezarJuego() {
         rondaActual = 1;
         correctas = 0; // Reiniciar contador de correctas
+        preguntasNoUsadas = new ArrayList<>(listaPreguntasYParejas);
+        Collections.shuffle(preguntasNoUsadas); // Barajar las preguntas para asegurar aleatoriedad
         mostrarRonda();
     }
 
-    private PreguntaYPareja obtenerPreguntaYParejaAleatoria() {
-        return listaPreguntasYParejas.get(random.nextInt(listaPreguntasYParejas.size()));
-    }
-
     private void mostrarRonda() {
-        PreguntaYPareja preguntaYPareja = obtenerPreguntaYParejaAleatoria();
+        rondaTerminada = false;
+        buttonBack.setText("SALIR");
+        actualizarTextoRonda();
+
+        PreguntaYPareja preguntaYPareja = preguntasNoUsadas.remove(0); // Obtener la primera pregunta no usada
         textViewPregunta.setText(preguntaYPareja.getPregunta());
+        imagen1.clearColorFilter();
+        imagen2.clearColorFilter();
+        imagen1.setEnabled(true);
+        imagen2.setEnabled(true);
         mostrarImagenes(preguntaYPareja);
         iniciarCuentaRegresiva();
     }
@@ -110,6 +128,7 @@ public class ImagenCorrecta extends AppCompatActivity {
     }
 
     private void verificarRespuesta(int imagenSeleccionada, int imagenCorrecta, ImageView imagenSeleccionadaView) {
+        cuentaRegresivaHandler.removeCallbacks(cuentaRegresivaRunnable); // Pausar la cuenta regresiva
         if (imagenSeleccionada == imagenCorrecta) {
             correctas++;
             imagenSeleccionadaView.setColorFilter(getResources().getColor(android.R.color.holo_green_light), PorterDuff.Mode.SRC_ATOP);
@@ -117,20 +136,18 @@ public class ImagenCorrecta extends AppCompatActivity {
             imagenSeleccionadaView.setColorFilter(getResources().getColor(android.R.color.holo_red_light), PorterDuff.Mode.SRC_ATOP);
         }
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                imagenSeleccionadaView.clearColorFilter();
-                if (rondaActual < NUMERO_RONDAS) {
-                    rondaActual++;
-                    mostrarRonda();
-                } else {
-                    mostrarResultadoFinal();
-                }
-            }
-        }, 1000);
-    }
+        imagen1.setEnabled(false);
+        imagen2.setEnabled(false);
 
+        if (imagenSeleccionadaView == imagen1) {
+            imagen2.setEnabled(false);
+        } else {
+            imagen1.setEnabled(false);
+        }
+
+        buttonBack.setText("CONTINUAR");
+        rondaTerminada = true;
+    }
 
     private void iniciarCuentaRegresiva() {
         if (cuentaRegresivaHandler != null && cuentaRegresivaRunnable != null) {
@@ -145,17 +162,23 @@ public class ImagenCorrecta extends AppCompatActivity {
             public void run() {
                 countdownTextView.setText(String.valueOf(tiempoRestante));
 
-                if (tiempoRestante == 0)
-                    mostrarMensajeTiempoFinalizado();
-                else {
-                    tiempoRestante--;
-
-                    cuentaRegresivaHandler.postDelayed(this, 1000);
+                if (!rondaTerminada) {
+                    if (tiempoRestante == 0) {
+                        mostrarMensajeTiempoFinalizado();
+                    } else {
+                        tiempoRestante--;
+                        cuentaRegresivaHandler.postDelayed(this, 1000);
+                    }
                 }
             }
         };
 
         cuentaRegresivaHandler.postDelayed(cuentaRegresivaRunnable, 1000);
+    }
+
+    private void actualizarTextoRonda() {
+        String textoRonda = rondaActual + "/" + NUMERO_RONDAS;
+        rondasTextView.setText(textoRonda);
     }
 
     private void mostrarMensajeTiempoFinalizado() {
