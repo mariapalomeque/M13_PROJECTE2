@@ -194,7 +194,9 @@ public class ImagenCorrecta extends AppCompatActivity {
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
+                        Intent intent = new Intent(ImagenCorrecta.this, Menu_paciente.class);
+                        startActivity(intent);
+                        finish(); // Opcional: Finalizar la actividad actual para que no quede en la pila de actividades.
                     }
                 })
                 .show();
@@ -208,6 +210,8 @@ public class ImagenCorrecta extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
+                        Intent intent = new Intent(ImagenCorrecta.this, Menu_paciente.class);
+
                     }
                 })
                 .show();
@@ -220,6 +224,7 @@ public class ImagenCorrecta extends AppCompatActivity {
 
         public PreguntaYPareja(String pregunta, int[] pareja) {
             this.pregunta = pregunta;
+
             this.pareja = pareja;
         }
 
