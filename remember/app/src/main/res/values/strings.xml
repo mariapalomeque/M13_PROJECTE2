@@ -20,4 +20,7 @@
     <string name="simon2">Los botones se <font color="#4A457B"> ilumnaran</font> revelando una<font color="#4A457B"> secuencia</font> de colores,<font color="#4A457B"> recuerdala</font>.</string>
     <string name="simon3">Cuando termine, deberas tocar los<font color="#4A457B"> botones</font> en el <font color="#4A457B"> mismo orden</font>. </string>
     <string name="simon4"><font color="#4A457B">Recuerda la secuencia más larga posible.</font>.</string>
+    <string name="imagen">Aparan  una <font color="#4A457B">pregunta y </font>dos <font color="#4A457B">imagenes </font>relacionadas <font color="#4A457B">contigo.</font></string>
+    <string name="imagen2">El jugador ha de <font color="#4A457B">seleccionar </font>la <font color="#4A457B">imagen </font>que <font color="#4A457B">corresponda</font> a la pregunta.</string>
+
 </resources>
