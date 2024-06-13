@@ -22,5 +22,6 @@
     <string name="simon4"><font color="#4A457B">Recuerda la secuencia más larga posible.</font>.</string>
     <string name="imagen">Aparan  una <font color="#4A457B">pregunta y </font>dos <font color="#4A457B">imagenes </font>relacionadas <font color="#4A457B">contigo.</font></string>
     <string name="imagen2">El jugador ha de <font color="#4A457B">seleccionar </font>la <font color="#4A457B">imagen </font>que <font color="#4A457B">corresponda</font> a la pregunta.</string>
+    <string name="imagen3">Segun vayas <font color="#4A457B">superando </font>los diferentes <font color="#4A457B">niveles </font>, el  <font color="#4A457B">tiempo</font> para responder sera <font color="#4A457B">inferior</font>.</string>
 
 </resources>

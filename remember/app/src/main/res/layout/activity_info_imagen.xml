@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.989"
         app:srcCompat="@drawable/elipse2" />
 
     <TextView
@@ -66,8 +66,8 @@
         android:id="@+id/inst2"
         android:layout_width="247dp"
         android:layout_height="125dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="276dp"
         android:gravity="left"
         android:text="@string/imagen2"
         android:textSize="25sp"
@@ -77,25 +77,12 @@
 
     <TextView
         android:id="@+id/inst3"
-        android:layout_width="271dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="328dp"
-        android:gravity="center"
-        android:text="@string/memory3"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/inst4"
-        android:layout_width="376dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="440dp"
-        android:gravity="center"
-        android:text="@string/memory4"
+        android:layout_width="332dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="516dp"
+        android:gravity="right"
+        android:text="@string/imagen3"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,13 +90,32 @@
 
     <ImageView
         android:id="@+id/imageView45"
-        android:layout_width="262dp"
-        android:layout_height="132dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="237dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/instrucciones_pregunt3" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="204dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="336dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagen_instrucciones" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="170dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="384dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cerebro_bombilla" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
