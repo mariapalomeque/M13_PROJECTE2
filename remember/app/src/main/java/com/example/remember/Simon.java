@@ -196,7 +196,7 @@ public class Simon extends AppCompatActivity {
 
     private void showGameOverDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("¡Tiempo agotado!");
+        builder.setTitle("¡Secuencia Incorrecta!");
         builder.setMessage("¡Has perdido! ¿Quieres intentarlo de nuevo?");
         builder.setPositiveButton("No", (dialog, which) -> {
             Intent intent = new Intent(Simon.this, Menu_paciente.class);

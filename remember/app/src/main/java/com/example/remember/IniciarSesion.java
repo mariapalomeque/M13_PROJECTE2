@@ -12,5 +12,15 @@ public class IniciarSesion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.iniciar_sesion);
+
+        Button btIS = findViewById(R.id.btn_iniciar_sesion);
+
+        btIS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(IniciarSesion.this, Menu_paciente.class);
+                startActivity(i);
+            }
+        });
     }
 }

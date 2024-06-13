@@ -5,29 +5,49 @@
       <config />
     </shared>
     <layouts>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/actiity_info_simon.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/acerca_de.xml">
         <config>
           <theme>@style/Theme.Remember</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_info_imagen.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_imagencorrecta.xml">
         <config>
-          <theme>@style/Theme.Remember</theme>
+          <theme>@style/AppTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_info_memory.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_memory.xml">
         <config>
-          <theme>@style/Theme.Remember</theme>
+          <theme>@style/AppTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_info_pregunta.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_memory_large.xml">
         <config>
-          <theme>@style/Theme.Remember</theme>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_memory_mid.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu_paciente.xml">
         <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preguntas.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_resultados.xml">
+        <config>
           <theme>@style/Theme.Remember</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_simon.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/configuracion.xml">
@@ -41,36 +61,6 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/iniciar_sesion.xml">
-        <config>
-          <theme>@style/Theme.Remember</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/iniciar_sesion_paciente.xml">
-        <config>
-          <theme>@style/Theme.Remember</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/inicio_paciente.xml">
-        <config>
-          <theme>@style/Theme.Remember</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/objeto_paciente.xml">
-        <config>
-          <theme>@style/Theme.Remember</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/pacientes.xml">
-        <config>
-          <theme>@style/Theme.Remember</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/pantalla_inicial.xml">
-        <config>
-          <theme>@style/AppTheme</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/perfil_paciente.xml">
         <config>
           <theme>@style/Theme.Remember</theme>
         </config>
@@ -100,16 +90,6 @@
           <theme>@style/Theme.Remember</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/proximamente.xml">
-        <config>
-          <theme>@style/Theme.Remember</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/registro_doctor.xml">
-        <config>
-          <theme>@style/Theme.Remember</theme>
-        </config>
-      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/registro_paciente.xml">
         <config>
           <theme>@style/Theme.Remember</theme>
@@ -123,8 +103,16 @@
   <component name="ChangeListManager">
     <list default="true" id="4b009605-b6c7-44e8-afc4-3471a3bdd092" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_info_imagen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_info_imagen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/ImagenCorrecta.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/ImagenCorrecta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/IniciarSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/IniciarSesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Memory_large.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Memory_large.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Preguntas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Preguntas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Simon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Simon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/iniciar_sesion_paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/iniciar_sesion_paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_imagencorrecta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_imagencorrecta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/presentacion4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/presentacion4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +122,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\anoni\.android\avd\Pixel_3_API_27.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\pauon\.android\avd\Pixel_6_API_34.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -181,8 +169,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="layoutResourceFile" />
+        <option value="layoutResourceFile_vertical" />
         <option value="Class" />
       </list>
     </option>
@@ -197,7 +185,8 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2fujd46irvMnZmXzBXQpY6MK33t" />
   <component name="ProjectLevelVcsManager">
@@ -217,16 +206,22 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/anoni/Desktop/M13_PROJECTE2/remember",
-    "settings.editor.selected.configurable": "preferences.updates"
+    "last_opened_file_path": "C:/Users/pauon/M13_PROJECTE2/remember/app/src/main/res/layout"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\anoni\Desktop\M13_PROJECTE2\remember\app\src\main\res\drawable" />
-      <recent name="C:\Users\anoni\Desktop\M13_PROJECTE2\remember\app\src\main\res\layout" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pauon\M13_PROJECTE2\remember\app\src\main\res\layout" />
+      <recent name="C:\Users\pauon\M13_PROJECTE2\remember\app\src\main\res\drawable" />
+      <recent name="C:\Users\pauon\M13_PROJECTE2\remember\app\src\main\res" />
     </key>
-    <key name="android.template.1050286803">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pauon\M13_PROJECTE2\remember\app\src\main\res\drawable" />
+      <recent name="C:\Users\CURTISSSS\M13_PROJECTE2\remember\app\src\main\res\drawable" />
+      <recent name="C:\Users\pauon\AndroidStudioProjects\M13_PROJECTE2\remember\app\src\main\res\drawable" />
+      <recent name="C:\Users\anoni\Desktop\M13_PROJECTE2\remember\app\src\main\res\drawable" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.remember" />
     </key>
   </component>
@@ -300,9 +295,6 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\anoni\AppData\Roaming\Subversion</configuration>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4b009605-b6c7-44e8-afc4-3471a3bdd092" name="Changes" comment="" />
@@ -312,9 +304,5 @@
       <updated>1714657942141</updated>
     </task>
     <servers />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="executable:docker" />
-    <option featureType="dependencySupport" implementationName="executable:kubectl" />
   </component>
 </project>

@@ -2,6 +2,7 @@ package com.example.remember;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -11,126 +12,179 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
 public class ImagenCorrecta extends AppCompatActivity {
 
-    private TextView textViewPregunta, countdownTextView;
+    private TextView textViewPregunta, countdownTextView, rondasTextView;
     private ImageView imagen1, imagen2;
     private Button buttonBack;
 
     private List<PreguntaYPareja> listaPreguntasYParejas;
+    private List<PreguntaYPareja> preguntasNoUsadas;
     private int rondaActual;
+    private int correctas;
     private Random random;
 
     private static final int NUMERO_RONDAS = 5;
     private static final int TIEMPO_CUENTA_REGRESIVA = 10; // 10 segundos
+
+    private Handler cuentaRegresivaHandler;
+    private Runnable cuentaRegresivaRunnable;
+    private boolean rondaTerminada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imagencorrecta);
 
-        // Inicializar vistas
         textViewPregunta = findViewById(R.id.textViewPregunta);
         countdownTextView = findViewById(R.id.countdownTextView);
+        rondasTextView = findViewById(R.id.rondas);
         imagen1 = findViewById(R.id.imagen1);
         imagen2 = findViewById(R.id.imagen2);
         buttonBack = findViewById(R.id.button_back);
 
-        // Inicializar variables
         listaPreguntasYParejas = new ArrayList<>();
         rondaActual = 1;
+        correctas = 0;
         random = new Random();
+        rondaTerminada = false;
 
-        // Agregar las parejas de imágenes y preguntas
-        listaPreguntasYParejas.add(new PreguntaYPareja("¿Cuál de estas casas es la tuya?", new int[]{R.drawable.casa1_ic, R.drawable.casa2_ic}));
-        listaPreguntasYParejas.add(new PreguntaYPareja("¿Cuál de estos perros es el tuyo?", new int[]{R.drawable.dog1_ic, R.drawable.dog2_ic}));
-        //listaPreguntasYParejas.add(new PreguntaYPareja("¿Cuál de estos autos es el tuyo?", new int[]{R.drawable.auto1_ic, R.drawable.auto2_ic})); // Agrega los nombres de las imágenes correspondientes
-        //listaPreguntasYParejas.add(new PreguntaYPareja("¿Cuál de estos gatos es el tuyo?", new int[]{R.drawable.cat1_ic, R.drawable.cat2_ic})); // Agrega los nombres de las imágenes correspondientes
-        //listaPreguntasYParejas.add(new PreguntaYPareja("¿Cuál de estos árboles es el tuyo?", new int[]{R.drawable.tree1_ic, R.drawable.tree2_ic})); // Agrega los nombres de las imágenes correspondientes
+        listaPreguntasYParejas.add(new PreguntaYPareja("¿Cual és el rey de España?", new int[]{R.drawable.reyespana_ic, R.drawable.pedrosanchez_ic}));
+        listaPreguntasYParejas.add(new PreguntaYPareja("¿Cuál de estos perros és un Pastor Aleman?", new int[]{R.drawable.dog2_ic, R.drawable.dog1_ic}));
+        listaPreguntasYParejas.add(new PreguntaYPareja("¿Cual és la torre Eiffel?", new int[]{R.drawable.torre_eiffel_ic, R.drawable.torre_pisa_ic}));
+        listaPreguntasYParejas.add(new PreguntaYPareja("¿Que ciudad és Nueva York?", new int[]{R.drawable.nyskyline_ic, R.drawable.bcnskyline_ic}));
+        listaPreguntasYParejas.add(new PreguntaYPareja("¿Quien és el rey del POP?", new int[]{R.drawable.mj_ic, R.drawable.elvis_ic}));
 
-        
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ImagenCorrecta.this, Menu_paciente.class);
-                startActivity(intent);
+                if (rondaTerminada) {
+                    rondaActual++;
+                    if (rondaActual <= NUMERO_RONDAS) {
+                        mostrarRonda();
+                    } else {
+                        mostrarResultadoFinal();
+                    }
+                } else {
+                    Intent intent = new Intent(ImagenCorrecta.this, Menu_paciente.class);
+                    startActivity(intent);
+                }
             }
         });
 
-        // Iniciar juego
         empezarJuego();
     }
 
     private void empezarJuego() {
-        // Restablecer ronda actual
         rondaActual = 1;
-
-        // Mostrar primera ronda
+        correctas = 0; // Reiniciar contador de correctas
+        preguntasNoUsadas = new ArrayList<>(listaPreguntasYParejas);
+        Collections.shuffle(preguntasNoUsadas); // Barajar las preguntas para asegurar aleatoriedad
         mostrarRonda();
     }
 
     private void mostrarRonda() {
-        // Obtener pareja de imágenes y pregunta para la ronda actual
-        PreguntaYPareja preguntaYPareja = obtenerPreguntaYParejaAleatoria();
+        rondaTerminada = false;
+        buttonBack.setText("SALIR");
+        actualizarTextoRonda();
 
-        // Actualizar contador de ronda
+        PreguntaYPareja preguntaYPareja = preguntasNoUsadas.remove(0); // Obtener la primera pregunta no usada
         textViewPregunta.setText(preguntaYPareja.getPregunta());
-
-        // Mostrar imágenes aleatorias
+        imagen1.clearColorFilter();
+        imagen2.clearColorFilter();
+        imagen1.setEnabled(true);
+        imagen2.setEnabled(true);
         mostrarImagenes(preguntaYPareja);
-
-        // Iniciar cuenta regresiva
         iniciarCuentaRegresiva();
     }
 
-    private void mostrarImagenes(PreguntaYPareja preguntaYPareja) {
-        // Mostrar imágenes
-        imagen1.setImageResource(preguntaYPareja.getPareja()[0]);
-        imagen2.setImageResource(preguntaYPareja.getPareja()[1]);
+    private void mostrarImagenes(final PreguntaYPareja preguntaYPareja) {
+        List<Integer> imagenes = new ArrayList<>();
+        imagenes.add(preguntaYPareja.getPareja()[0]); // Imagen correcta
+        imagenes.add(preguntaYPareja.getPareja()[1]); // Imagen incorrecta
+
+        Collections.shuffle(imagenes);
+
+        imagen1.setImageResource(imagenes.get(0));
+        imagen2.setImageResource(imagenes.get(1));
+
+        imagen1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                verificarRespuesta(imagenes.get(0), preguntaYPareja.getPareja()[0], imagen1);
+            }
+        });
+
+        imagen2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                verificarRespuesta(imagenes.get(1), preguntaYPareja.getPareja()[0], imagen2);
+            }
+        });
     }
 
-    private PreguntaYPareja obtenerPreguntaYParejaAleatoria() {
-        // Devolver una pareja de imágenes y pregunta aleatoria
-        return listaPreguntasYParejas.get(random.nextInt(listaPreguntasYParejas.size()));
+    private void verificarRespuesta(int imagenSeleccionada, int imagenCorrecta, ImageView imagenSeleccionadaView) {
+        cuentaRegresivaHandler.removeCallbacks(cuentaRegresivaRunnable);
+        int alphaValue = 128; // Valor de transparencia (0-255), donde 255 es completamente opaco y 0 es completamente transparente
+        if (imagenSeleccionada == imagenCorrecta) {
+            correctas++;
+            int greenColorWithTransparency = android.graphics.Color.argb(alphaValue, 0, 255, 0);
+            imagenSeleccionadaView.setColorFilter(greenColorWithTransparency, PorterDuff.Mode.SRC_ATOP);
+        } else {
+            int redColorWithTransparency = android.graphics.Color.argb(alphaValue, 255, 0, 0);
+            imagenSeleccionadaView.setColorFilter(redColorWithTransparency, PorterDuff.Mode.SRC_ATOP);
+        }
+
+        imagen1.setEnabled(false);
+        imagen2.setEnabled(false);
+
+        if (imagenSeleccionadaView == imagen1) {
+            imagen2.setEnabled(false);
+        } else {
+            imagen1.setEnabled(false);
+        }
+
+        buttonBack.setText("CONTINUAR");
+        rondaTerminada = true;
     }
 
     private void iniciarCuentaRegresiva() {
-        // Mostrar cuenta regresiva
-        countdownTextView.setVisibility(View.VISIBLE);
+        if (cuentaRegresivaHandler != null && cuentaRegresivaRunnable != null) {
+            cuentaRegresivaHandler.removeCallbacks(cuentaRegresivaRunnable);
+        }
 
-        // Empezar cuenta regresiva
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
+        cuentaRegresivaHandler = new Handler();
+        cuentaRegresivaRunnable = new Runnable() {
             int tiempoRestante = TIEMPO_CUENTA_REGRESIVA;
 
             @Override
             public void run() {
-                // Actualizar texto de la cuenta regresiva
                 countdownTextView.setText(String.valueOf(tiempoRestante));
 
-                // Verificar si el tiempo ha terminado
-                if (tiempoRestante == 0) {
-                    // Ocultar cuenta regresiva
-                    countdownTextView.setVisibility(View.INVISIBLE);
-
-                    // Mostrar mensaje de tiempo finalizado
-                    mostrarMensajeTiempoFinalizado();
-                } else {
-                    // Reducir tiempo restante y continuar la cuenta regresiva
-                    tiempoRestante--;
-
-                    // Llamar recursivamente después de 1 segundo
-                    handler.postDelayed(this, 1000);
+                if (!rondaTerminada) {
+                    if (tiempoRestante == 0) {
+                        mostrarMensajeTiempoFinalizado();
+                    } else {
+                        tiempoRestante--;
+                        cuentaRegresivaHandler.postDelayed(this, 1000);
+                    }
                 }
             }
-        }, 1000); // Retraso inicial de 1 segundo
+        };
+
+        cuentaRegresivaHandler.postDelayed(cuentaRegresivaRunnable, 1000);
+    }
+
+    private void actualizarTextoRonda() {
+        String textoRonda = rondaActual + "/" + NUMERO_RONDAS;
+        rondasTextView.setText(textoRonda);
     }
 
     private void mostrarMensajeTiempoFinalizado() {
-        // Crear diálogo de alerta
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Tiempo Finalizado")
                 .setMessage("¿Quieres volver a jugar?")
@@ -143,8 +197,24 @@ public class ImagenCorrecta extends AppCompatActivity {
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(ImagenCorrecta.this, Menu_paciente.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                })
+                .show();
+    }
+
+    private void mostrarResultadoFinal() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Juego Terminado")
+                .setMessage("Has completado el juego con " + correctas + " de 5 respuestas correctas.")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        // Volver al menú principal o realizar otra acción
+                        Intent intent = new Intent(ImagenCorrecta.this, Menu_paciente.class);
+
                     }
                 })
                 .show();
@@ -157,6 +227,7 @@ public class ImagenCorrecta extends AppCompatActivity {
 
         public PreguntaYPareja(String pregunta, int[] pareja) {
             this.pregunta = pregunta;
+
             this.pareja = pareja;
         }
 

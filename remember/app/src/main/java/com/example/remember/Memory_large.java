@@ -44,9 +44,9 @@ public class Memory_large extends AppCompatActivity {
         startCountdown();
 
         List<Integer> images = new ArrayList<>();
-        images.add(R.drawable.perromemory);
-        images.add(R.drawable.tulipanes_memory);
-        images.add(R.drawable.platanomemory);
+        images.add(R.drawable.hamstermemory);
+        images.add(R.drawable.applememory);
+        images.add(R.drawable.relojmemory);
         images.add(R.drawable.montserrat_memory);
         images.add(R.drawable.ball);
         images.add(R.drawable.telephone);
@@ -97,7 +97,7 @@ public class Memory_large extends AppCompatActivity {
     }
 
     private void startCountdown() {
-        new CountDownTimer(60000, 1000) {
+        new CountDownTimer(120000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 countdownTextView.setText("" + millisUntilFinished / 1000);

@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_titulo_juegos_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:text="¡BIEN HECHO!"
+        android:textSize="35sp"
+        android:textColor="@color/titulo"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="245dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087"
+        app:srcCompat="@drawable/circulo" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="245dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cerebro_festejando" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/num_aciertos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="-a1-"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/text_aciertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aciertos de 5"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="Volver a jugar"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@drawable/boton_rectangular_lila"
+
+            />
+
+        <Button
+            android:id="@+id/button_salir"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+                android:text="Menú"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:background="@drawable/boton_rectangular_lila"
+            />
+    </LinearLayout>
+</LinearLayout>
