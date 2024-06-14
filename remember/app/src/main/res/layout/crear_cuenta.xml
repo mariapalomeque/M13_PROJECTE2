@@ -44,22 +44,12 @@
         android:layout_marginTop="80dp"
         android:background="@drawable/boton_rectangular"
         android:gravity="center"
-        android:text="Crear cuenta"
+        android:text="Iniciar sesión"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/elipseheader" />
+        app:layout_constraintTop_toBottomOf="@+id/elipseheader"
+        app:layout_constraintVertical_bias="0.08" />
 
-    <TextView
-        android:id="@+id/cuenta_registrada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿Ya tienes una cuenta?"
-        android:textColor="@color/gris_claro"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/crear_cuenta"
-        app:layout_constraintStart_toStartOf="@+id/crear_cuenta"
-        app:layout_constraintTop_toBottomOf="@+id/crear_cuenta"
-        app:layout_constraintVertical_bias="0.09" />
 </androidx.constraintlayout.widget.ConstraintLayout>

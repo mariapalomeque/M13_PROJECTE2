@@ -129,7 +129,7 @@ public class ImagenCorrecta extends AppCompatActivity {
 
     private void verificarRespuesta(int imagenSeleccionada, int imagenCorrecta, ImageView imagenSeleccionadaView) {
         cuentaRegresivaHandler.removeCallbacks(cuentaRegresivaRunnable);
-        int alphaValue = 128; // Valor de transparencia (0-255), donde 255 es completamente opaco y 0 es completamente transparente
+        int alphaValue = 128;
         if (imagenSeleccionada == imagenCorrecta) {
             correctas++;
             int greenColorWithTransparency = android.graphics.Color.argb(alphaValue, 0, 255, 0);
@@ -156,15 +156,12 @@ public class ImagenCorrecta extends AppCompatActivity {
         if (cuentaRegresivaHandler != null && cuentaRegresivaRunnable != null) {
             cuentaRegresivaHandler.removeCallbacks(cuentaRegresivaRunnable);
         }
-
         cuentaRegresivaHandler = new Handler();
         cuentaRegresivaRunnable = new Runnable() {
             int tiempoRestante = TIEMPO_CUENTA_REGRESIVA;
-
             @Override
             public void run() {
                 countdownTextView.setText(String.valueOf(tiempoRestante));
-
                 if (!rondaTerminada) {
                     if (tiempoRestante == 0) {
                         mostrarMensajeTiempoFinalizado();
@@ -208,13 +205,21 @@ public class ImagenCorrecta extends AppCompatActivity {
     private void mostrarResultadoFinal() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Juego Terminado")
-                .setMessage("Has completado el juego con " + correctas + " de 5 respuestas correctas.")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                .setMessage("Has completado el juego con " + correctas + " de " + NUMERO_RONDAS + " respuestas correctas.\n¿Quieres volver a jugar?")
+                .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        empezarJuego(); // Reinicia la actividad
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
                         Intent intent = new Intent(ImagenCorrecta.this, Menu_paciente.class);
-
+                        startActivity(intent);
+                        finish(); // Finaliza la actividad actual
                     }
                 })
                 .show();
@@ -227,7 +232,6 @@ public class ImagenCorrecta extends AppCompatActivity {
 
         public PreguntaYPareja(String pregunta, int[] pareja) {
             this.pregunta = pregunta;
-
             this.pareja = pareja;
         }
 

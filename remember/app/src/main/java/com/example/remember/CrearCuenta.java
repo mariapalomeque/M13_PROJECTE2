@@ -15,20 +15,13 @@ public class CrearCuenta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crear_cuenta);
 
-        TextView btIniciarSesion = findViewById(R.id.cuenta_registrada);
         Button btCrearCuenta = findViewById(R.id.crear_cuenta);
-        btIniciarSesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(CrearCuenta.this, IniciarSesion.class);
-                startActivity(i);
-            }
-        });
+
 
         btCrearCuenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CrearCuenta.this, RegistroDoctor.class);
+                Intent i = new Intent(CrearCuenta.this, IniciarSesion.class);
                 startActivity(i);
             }
         });

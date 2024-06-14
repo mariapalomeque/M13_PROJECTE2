@@ -10,6 +10,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class memory_mid extends AppCompatActivity {
+    private long timeElapsed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,14 @@ public class memory_mid extends AppCompatActivity {
         setContentView(R.layout.activity_memory_mid);
 
         Button btnmid = findViewById(R.id.btn_memory_mid);
+        timeElapsed = getIntent().getLongExtra("timeElapsed", 0);
         btnmid.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(memory_mid.this, Memory_large.class);
+                intent.putExtra("timeElapsed", timeElapsed);
                 startActivity(intent);
+                finish();
             }
         });
 

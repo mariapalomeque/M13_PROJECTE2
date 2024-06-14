@@ -25,6 +25,9 @@ public class Memory extends AppCompatActivity {
     private Integer indexOfSingleSelectedCard;
     private TextView countdownTextView;
 
+    private CountDownTimer countDownTimer;
+    private long timeRemaining; // Tiempo restante en milisegundos
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,9 +85,10 @@ public class Memory extends AppCompatActivity {
     }
 
     private void startCountdown() {
-        new CountDownTimer(60000, 1000) {
+        countDownTimer = new CountDownTimer(60000, 1000) {
 
             public void onTick(long millisUntilFinished) {
+                timeRemaining = millisUntilFinished; // Guardar el tiempo restante
                 countdownTextView.setText("" + millisUntilFinished / 1000);
             }
 
@@ -94,6 +98,7 @@ public class Memory extends AppCompatActivity {
             }
         }.start();
     }
+
     private void showGameOverDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("¡Tiempo agotado!");
@@ -110,7 +115,6 @@ public class Memory extends AppCompatActivity {
         dialog.show();
     }
 
-
     private void updateViews() {
         for (int i = 0; i < cards.size(); i++) {
             ImageButton button = buttons.get(i);
@@ -124,7 +128,6 @@ public class Memory extends AppCompatActivity {
 
     private void updateModels(int position) {
         MemoryCard card = cards.get(position);
-        // Error checking:
         if (card.isFaceUp()) {
             Toast.makeText(this, "No es correcta", Toast.LENGTH_SHORT).show();
             return;
@@ -154,7 +157,6 @@ public class Memory extends AppCompatActivity {
             cards.get(position1).setMatched(true);
             cards.get(position2).setMatched(true);
 
-
             boolean allMatched = true;
             for (MemoryCard card : cards) {
                 if (!card.isMatched()) {
@@ -163,18 +165,17 @@ public class Memory extends AppCompatActivity {
                 }
             }
 
-
             if (allMatched) {
-                // escribir codigo para hacer  cuando todas dan match
+                // Detener el temporizador
+                countDownTimer.cancel();
+                // Calcular el tiempo tardado en segundos
+                long timeElapsedInSeconds = (60000 - timeRemaining) / 1000;
 
-                Toast.makeText(this, "¡Todas las cartas están emparejadas!", Toast.LENGTH_SHORT).show();
+                // Pasar el tiempo restante a la siguiente actividad
                 Intent intent = new Intent(Memory.this, memory_mid.class);
+                intent.putExtra("timeElapsed", timeElapsedInSeconds);
                 startActivity(intent);
-            }
-
             }
         }
     }
-
-
-
+}

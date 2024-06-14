@@ -29,7 +29,7 @@ public class Simon extends AppCompatActivity {
 
     private static final int TIEMPO_ENTRE_COLORES_MS = 1000; // Medio segundo
     private static final int NUMERO_COLORES_INICIAL = 1;
-    private static final int NUMERO_COLORES_MAXIMO = 5;
+    private static final int NUMERO_COLORES_MAXIMO = 10;
 
     private Random random;
 
@@ -110,20 +110,32 @@ public class Simon extends AppCompatActivity {
         esperandoUsuarioInput = false;
 
         final Handler handler = new Handler();
-        Runnable runnable = new Runnable() {
+        Runnable mostrarRunnable = new Runnable() {
             @Override
             public void run() {
                 if (indiceSecuencia < secuencia.size()) {
+                    // Resaltar el color actual
                     resaltarColor(secuencia.get(indiceSecuencia));
-                    indiceSecuencia++;
-                    handler.postDelayed(this, TIEMPO_ENTRE_COLORES_MS);
+                    handler.postDelayed(() -> {
+                        // Apagar el color actual
+                        apagarColores();
+                        indiceSecuencia++;
+                        handler.postDelayed(this, TIEMPO_ENTRE_COLORES_MS);
+                    }, TIEMPO_ENTRE_COLORES_MS / 2); // Duración del resaltado
                 } else {
                     esperandoUsuarioInput = true;
                     indiceSecuencia = 0; // Resetear el índice para la entrada del usuario
                 }
             }
         };
-        handler.postDelayed(runnable, TIEMPO_ENTRE_COLORES_MS);
+        handler.post(mostrarRunnable);
+    }
+
+    private void apagarColores() {
+        ViewCompat.setAlpha(botonRojo, 1.0f);
+        ViewCompat.setAlpha(botonVerde, 1.0f);
+        ViewCompat.setAlpha(botonAzul, 1.0f);
+        ViewCompat.setAlpha(botonAmarillo, 1.0f);
     }
 
     private void resaltarColor(int color) {
@@ -180,7 +192,7 @@ public class Simon extends AppCompatActivity {
                 if (indiceSecuencia == secuencia.size()) {
                     if (rondaActual == NUMERO_COLORES_MAXIMO) {
                         // El usuario ganó
-                        // Aquí puedes escribir el código para manejar la victoria
+                        showVictoryDialog(); // Mostrar diálogo de victoria
                     } else {
                         // Siguiente ronda
                         rondaActual++;
@@ -205,6 +217,27 @@ public class Simon extends AppCompatActivity {
         });
         builder.setNegativeButton("Sí", (dialog, which) -> {
             recreate();
+        });
+        builder.setCancelable(false); // Evitar que el diálogo se cierre al hacer clic fuera de él
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    private void showVictoryDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("¡Juego Completado!");
+        builder.setMessage("¡Felicidades, has completado 5 rondas! ¿Quieres jugar otra vez?");
+        builder.setPositiveButton("Sí", (dialog, which) -> {
+            // Reiniciar la actividad actual para jugar de nuevo
+            Intent intent = new Intent(Simon.this, Simon.class);
+            startActivity(intent);
+            finish();
+        });
+        builder.setNegativeButton("No", (dialog, which) -> {
+            // Volver al menú principal
+            Intent intent = new Intent(Simon.this, Menu_paciente.class);
+            startActivity(intent);
+            finish();
         });
         builder.setCancelable(false); // Evitar que el diálogo se cierre al hacer clic fuera de él
         AlertDialog dialog = builder.create();

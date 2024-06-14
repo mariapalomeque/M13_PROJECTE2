@@ -82,7 +82,6 @@ public class Preguntas extends AppCompatActivity {
         outState.putInt("preguntaActual", preguntaActual);
         outState.putParcelableArrayList("listaPreguntas", new ArrayList<>(listaPreguntas));
     }
-
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -96,15 +95,12 @@ public class Preguntas extends AppCompatActivity {
         Pregunta pregunta = listaPreguntas.get(preguntaActual);
         TextView textViewQuestion = findViewById(R.id.text_question);
         textViewQuestion.setText(pregunta.getPregunta());
-
         List<String> respuestas = pregunta.getRespuestas();
         buttonAnswer1.setText(respuestas.get(0));
         buttonAnswer2.setText(respuestas.get(1));
         buttonAnswer3.setText(respuestas.get(2));
         buttonAnswer4.setText(respuestas.get(3));
-
         correctButton = getButtonForCorrectAnswer(pregunta.getRespuestaCorrecta(), respuestas);
-
         updateCounter();
     }
 

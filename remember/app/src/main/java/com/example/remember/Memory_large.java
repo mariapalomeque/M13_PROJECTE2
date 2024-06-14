@@ -25,13 +25,16 @@ public class Memory_large extends AppCompatActivity {
     private Integer indexOfSingleSelectedCard;
     private TextView countdownTextView;
 
+    private CountDownTimer countDownTimer;
+    private long timeRemaining; // Tiempo restante en milisegundos
+    private long previousTimeElapsed; // Tiempo anterior pasado desde Memory normal
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory_large);
 
-        ImageView ayuda=findViewById(R.id.ayuda);
-
+        ImageView ayuda = findViewById(R.id.ayuda);
         ayuda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,9 +55,6 @@ public class Memory_large extends AppCompatActivity {
         images.add(R.drawable.telephone);
         images.add(R.drawable.ferrero);
         images.add(R.drawable.thunder);
-
-
-
 
         List<Integer> pairedImages = new ArrayList<>(images);
         images.addAll(pairedImages);
@@ -80,7 +80,6 @@ public class Memory_large extends AppCompatActivity {
         buttons.add(findViewById(R.id.imageButton15));
         buttons.add(findViewById(R.id.imageButton16));
 
-
         cards = new ArrayList<>();
         for (int i = 0; i < buttons.size(); i++) {
             cards.add(new MemoryCard(images.get(i)));
@@ -94,12 +93,16 @@ public class Memory_large extends AppCompatActivity {
                 updateViews();
             });
         }
+
+        // Recibir el tiempo pasado desde Memory_mid
+        previousTimeElapsed = getIntent().getLongExtra("timeElapsed", 0);
     }
 
     private void startCountdown() {
-        new CountDownTimer(120000, 1000) {
+        countDownTimer = new CountDownTimer(120000, 1000) {
 
             public void onTick(long millisUntilFinished) {
+                timeRemaining = millisUntilFinished; // Guardar el tiempo restante
                 countdownTextView.setText("" + millisUntilFinished / 1000);
             }
 
@@ -109,6 +112,7 @@ public class Memory_large extends AppCompatActivity {
             }
         }.start();
     }
+
     private void showGameOverDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("¡Tiempo agotado!");
@@ -124,7 +128,6 @@ public class Memory_large extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-
 
     private void updateViews() {
         for (int i = 0; i < cards.size(); i++) {
@@ -169,7 +172,6 @@ public class Memory_large extends AppCompatActivity {
             cards.get(position1).setMatched(true);
             cards.get(position2).setMatched(true);
 
-
             boolean allMatched = true;
             for (MemoryCard card : cards) {
                 if (!card.isMatched()) {
@@ -178,14 +180,38 @@ public class Memory_large extends AppCompatActivity {
                 }
             }
 
-
             if (allMatched) {
-                // Agregar código para cuando todas las cartas dan match
-                // Por ejemplo, mostrar un mensaje o abrir una nueva actividad
-                Toast.makeText(this, "¡Todas las cartas están emparejadas!", Toast.LENGTH_SHORT).show();
-
-
+                // Detener el temporizador
+                countDownTimer.cancel();
+                // Mostrar el diálogo de finalización
+                showCompletionDialog();
             }
         }
+    }
+
+    private void showCompletionDialog() {
+        // Calcular el tiempo tardado en segundos en esta fase
+        long timeElapsedInSeconds = (120000 - timeRemaining) / 1000;
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("¡MUY BIEN!");
+        builder.setMessage("Juego en modo difícil completado en " + timeElapsedInSeconds + " segundos.\n" +
+                "Tiempo total en la fase fácil: " + previousTimeElapsed + " segundos.\n" +
+                "¿Quieres jugar otra vez?");
+        builder.setPositiveButton("Sí", (dialog, which) -> {
+            // Reiniciar la actividad actual para jugar de nuevo
+            Intent intent = new Intent(Memory_large.this, Memory.class);
+            startActivity(intent);
+            finish();
+        });
+        builder.setNegativeButton("No", (dialog, which) -> {
+            // Volver al menú principal
+            Intent intent = new Intent(Memory_large.this, Menu_paciente.class);
+            startActivity(intent);
+            finish();
+        });
+        builder.setCancelable(false); // Evitar que el diálogo se cierre al hacer clic fuera de él
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }

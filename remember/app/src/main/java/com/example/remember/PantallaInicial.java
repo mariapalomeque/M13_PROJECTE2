@@ -19,7 +19,7 @@ public class PantallaInicial extends AppCompatActivity {
         btPaciente.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PantallaInicial.this, inicio_paciente.class);
+                Intent intent = new Intent(PantallaInicial.this, CrearCuenta.class);
                 startActivity(intent);
             }
         });

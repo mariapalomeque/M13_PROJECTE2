@@ -65,6 +65,16 @@
           <theme>@style/Theme.Remember</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/inicio_paciente.xml">
+        <config>
+          <theme>@style/Theme.Remember</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/pantalla_inicial.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/presentacion.xml">
         <config>
           <theme>@style/Theme.Remember</theme>
@@ -102,16 +112,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b009605-b6c7-44e8-afc4-3471a3bdd092" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/CrearCuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/CrearCuenta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/ImagenCorrecta.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/ImagenCorrecta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/IniciarSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/IniciarSesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Memory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Memory_large.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Memory_large.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/PantallaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/PantallaInicial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Preguntas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Preguntas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Simon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/Simon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/iniciar_sesion_paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/iniciar_sesion_paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_imagencorrecta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_imagencorrecta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/memory_mid.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/memory_mid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion3.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion4.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion5.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remember/presentacion5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_memory_mid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_memory_mid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/crear_cuenta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/crear_cuenta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/presentacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/presentacion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/presentacion2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/presentacion2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/presentacion3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/presentacion3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/presentacion4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/presentacion4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/presentacion5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/presentacion5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +150,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\pauon\.android\avd\Pixel_6_API_34.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\CURTISSSS\.android\avd\Pixel_6_API_34.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -172,6 +200,7 @@
         <option value="layoutResourceFile" />
         <option value="layoutResourceFile_vertical" />
         <option value="Class" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -205,6 +234,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/pauon/M13_PROJECTE2/remember/app/src/main/res/layout"
   }
@@ -304,5 +334,16 @@
       <updated>1714657942141</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
